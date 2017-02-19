@@ -14,12 +14,14 @@ if (!databaseUri) {
 var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://deenu:dr15031422@ds157549.mlab.com:57549/heroku_gpfksr0x',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'myAppId',
+  appId: process.env.APP_ID || 'rfoWMTlp8Cq2AMCZ8LzJ6tpC1TROesU5Ggx2Kkob',
   masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'https://veelo.herokuapp.com/parse',  // Don't forget to change to https if needed
+  
   liveQuery: {
     classNames: ["Messaging", "_user"] // List of classes to support for query subscriptions
   }
+ 
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:
