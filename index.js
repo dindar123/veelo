@@ -27,6 +27,15 @@ var api = new ParseServer({
   apiKey: 'AIzaSyCl-niHcuWkI0dWgcYEx94tDShmoMDkbvM'
 }
  },
+  oauth:{
+    accountkit:{
+      module: 'parse-server-phone-number-auth',
+      appsecret: 'fbebd178d9ed60b5491fdb21430c1b92'
+    },
+    facebook: {
+      appIds: "206404433154321"
+    }
+  }
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:
